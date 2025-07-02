@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Calorie Image Classifier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 font-sans">
+  <div class="container mx-auto px-4 py-12">
+    <header class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">Food Calorie Image Classifier</h1>
+      <p class="text-gray-600 max-w-2xl mx-auto">Upload an image of your food to get instant calorie estimates and detailed nutrition information.</p>
+    </header>
+
+    <div class="bg-white rounded-xl shadow-sm p-6 max-w-xl mx-auto">
+      <div id="uploadArea" class="upload-area rounded-lg p-8 text-center cursor-pointer border-2 border-dashed border-gray-300 hover:border-blue-400 transition">
+        <div class="mx-auto w-16 h-16 mb-4 flex items-center justify-center bg-blue-50 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-medium text-gray-800 mb-1">Drag & drop your food image here</h3>
+        <p class="text-sm text-gray-500 mb-4">or click to select file</p>
+        <input type="file" id="fileInput" class="hidden" accept="image/*">
+        <label for="fileInput" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition cursor-pointer">
+          Select File
+        </label>
+      </div>
+    </div>
+
+    <footer class="mt-16 text-center text-sm text-gray-500">
+      <p>This tool provides estimates only. Always consult a nutritionist for professional dietary advice.</p>
+    </footer>
+  </div>
+</body>
+</html>
